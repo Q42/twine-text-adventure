@@ -11,7 +11,7 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="De ballonvaart" startnode="5" creator="Twine" creator-version="2.3.9" ifid="820847EF-9DBC-46B6-958A-FF64D85B7AF1" zoom="1" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="header" color="blue"></tw-tag>,<tw-tag name="image" color="green"></tw-tag>,<tw-tag name="startup" color="orange"></tw-tag><tw-passagedata pid="1" name="Bos" tags="" position="1086,438" size="100,100">(display: &quot;DinoRex&quot;)&lt;div class=&quot;text-block&quot;&gt;
+<tw-storydata name="De ballonvaart" startnode="14" creator="Twine" creator-version="2.3.9" ifid="820847EF-9DBC-46B6-958A-FF64D85B7AF1" zoom="1" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="header" color="blue"></tw-tag>,<tw-tag name="image" color="green"></tw-tag>,<tw-tag name="startup" color="orange"></tw-tag><tw-passagedata pid="1" name="Bos" tags="" position="1085,439" size="100,100">(display: &quot;DinoRex&quot;)&lt;div class=&quot;text-block&quot;&gt;
 Je stapt uit de ballon.
 Opeens zie je een grote... dinosaurus?
 Het is een &lt;a href=&quot;#&quot; onclick=&quot;explain()&quot;&gt;T-Rex&lt;/a&gt;!
@@ -37,7 +37,7 @@ Je doet je ogen open..
 ..in het gezicht van de T-Rex!
 
 [[...-&gt;T-Rex]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="4" name="T-Rex" tags="" position="1099,608" size="100,100">(display: &quot;DinoRex&quot;)&lt;div class=&quot;text-block&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="4" name="T-Rex" tags="" position="1100,607" size="100,100">(display: &quot;DinoRex&quot;)&lt;div class=&quot;text-block&quot;&gt;
 De T-Rex kijkt je met grote ogen aan:
 &quot;Je moet me helpen!&quot; 
 &quot;Ik ben mijn ei kwijt.&quot; 
@@ -45,9 +45,9 @@ De T-Rex kijkt je met grote ogen aan:
 &quot;Kan je me mijn ei terugbrengen alsjeblieft?&quot;
 De &lt;a href=&quot;#&quot; onclick=&quot;explain()&quot;&gt;gigantische&lt;/a&gt; dino wijst naar de boom.
 
-[[Ga naar de boom-&gt;Onder de boom]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="5" name="Landing" tags="" position="1317,242" size="100,100">(display: &quot;Luchtballon&quot;)&lt;div class=&quot;text-block&quot;&gt;
-De ballon is geland op een open plek in het bos.
+[[Ga naar de boom-&gt;Onderaan de boom]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="5" name="Landing Dinos" tags="" position="890,263" size="100,100">(display: &quot;Luchtballon&quot;)&lt;div class=&quot;text-block&quot;&gt;
+Even later is de ballon geland op een open plek in het bos.
 Wat verder beginnen de bomen.
 Het is hier stil. Bijna té stil.
 
@@ -61,15 +61,22 @@ Voor je zit een grote grijze vogel in zijn nest.
 In het nest ligt een groot ei. 
 Veel te groot voor een vogel!
 
+
 [[Probeer het ei te pakken-&gt;Aanval]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="7" name="Aanval" tags="" position="1100,1053" size="100,100">(display: &quot;DinoEiland&quot;)&lt;div class=&quot;text-block&quot;&gt;
+(if: $bril)
+[[Geef de bril-&gt;Bril2]]
+
+[[Klim naar beneden-&gt;Onderaan de boom]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="7" name="Aanval" tags="" position="1100,1054" size="100,100">(display: &quot;DinoEiland&quot;)&lt;div class=&quot;text-block&quot;&gt;
 Zodra je het ei aanraakt, pikt de vogel naar je hand en kraakt: 
 &quot;Van mij! Van mij!&quot;
 De vogel lijkt niet te zien waar de hand vandaan kwam. 
-In het nest ligt een bril.
 
+
+(if: $bril)
+[[Geef de bril-&gt;Bril2]]
 [[Pak het ei-&gt;Aanval]]
-(if: $bril)[[Geef de bril-&gt;Bril2]]
+[[Klim naar beneden-&gt;Onderaan de boom]] 
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="8" name="Bril2" tags="" position="1220,1177" size="100,100">(display: &quot;DinoEiland&quot;)&lt;div class=&quot;text-block&quot;&gt;
 De vogel grist de bril uit je hand. 
 Met de bril op zijn neus ziet de vogel het dino ei. 
@@ -92,12 +99,8 @@ Rex knuffelt het ei en mompelt er iets tegen.
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="11" name="Ballon" tags="" position="1343,1476" size="100,100">(display: &quot;Luchtballon&quot;)&lt;div class=&quot;text-block&quot;&gt;
 Je komt aan op de open plek in het bos. 
 De ballon is er nog!
-Met een zwier klim je in de ballon. 
-Het boek ligt er nog. 
-Hoe zal het verdergaan?
-
-[[Sla de bladzijde om...-&gt;Landing]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="12" name="Onder de boom" tags="" position="1009,758" size="100,100">(display: &quot;DinoEiland&quot;)&lt;div class=&quot;text-block&quot;&gt;
+Met een zwier klim je in de ballon en hij stijgt meteen op.
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="12" name="Onderaan de boom" tags="" position="1009,758" size="100,100">(display: &quot;DinoEiland&quot;)&lt;div class=&quot;text-block&quot;&gt;
 Je staat onderaan een reusachtige boom.
 Als je naar boven kijkt dan duizelt het een beetje.
 
@@ -108,8 +111,8 @@ Als je naar boven kijkt dan duizelt het een beetje.
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="13" name="Pak bril" tags="" position="1151,755" size="100,100">(display: &quot;DinoEiland&quot;)&lt;div class=&quot;text-block&quot;&gt;
 Je pakt de bril op (set: $bril to true)
 
-[[Verder -&gt;Onder de boom]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="14" name="Grasveld" tags="" position="333,913" size="100,100">De ballon landt op een groot grasveld.
+[[Verder -&gt;Onderaan de boom]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="14" name="Grasveld" tags="" position="332,914" size="100,100">De ballon landt op een groot grasveld.
 
 Er loopt een weg naar een kasteel in de verte.
 
@@ -157,7 +160,7 @@ Er ligt een grote soeplepel op het aanrecht.
 
 Hij vind het zwaard veel te zwaar.
 
-[[Breng het zwaard naar de ridder-&gt;Zwaard naar ridder]]</tw-passagedata><tw-passagedata pid="26" name="Soeplepel" tags="" position="726,1334" size="100,100">Je pakt de grote soeplepel en houd deze in je hand.
+[[Breng het zwaard naar de ridder-&gt;Zwaard naar ridder]]</tw-passagedata><tw-passagedata pid="26" name="Soeplepel" tags="" position="726,1334" size="100,100">Je pakt de grote soeplepel en houdt deze in je hand.
 (set: $soeplepel to true)
 [[Loop terug naar de chef-&gt;Kasteelkeuken]]</tw-passagedata><tw-passagedata pid="27" name="Geen soeplepel" tags="" position="453,1333" size="100,100">De chef wilt het zwaard niet geven.
 
@@ -184,9 +187,11 @@ Je stapt uit en de ridder zegt: &quot;bedankt voor het feest, ik hoop je snel we
 
 &quot;Doei!&quot;
 
-[[Stap in de ballon-&gt;Verlaat kasteel]]</tw-passagedata><tw-passagedata pid="31" name="Verlaat kasteel" tags="" position="167,1468" size="100,100">Je stapt in de ballon en de ballon stijgt direct op.
+[[Stap in de ballon-&gt;Verlaat kasteel]]</tw-passagedata><tw-passagedata pid="31" name="Verlaat kasteel" tags="" position="166,1468" size="100,100">Je stapt in de ballon en de ballon stijgt direct op.
 
-Onder je zie je het kasteel verdwijnen.</tw-passagedata><tw-passagedata pid="32" name="twine" tags="header" position="345,409" size="100,100">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://q42.github.io/twine-text-adventure/twine.css&quot;&gt;
+Onder je zie je het kasteel verdwijnen.
+
+[[zweef verder-&gt;onderweg naar de dinos]]</tw-passagedata><tw-passagedata pid="32" name="twine" tags="header" position="345,409" size="100,100">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://q42.github.io/twine-text-adventure/twine.css&quot;&gt;
 &lt;link rel=&quot;stylesheet&quot; href=&quot;https://use.typekit.net/vvw4tee.css&quot;&gt;
 
 &lt;script src=&quot;https://q42.github.io/twine-text-adventure/twine.js&quot;&gt;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="33" name="tooltip" tags="header" position="459,409" size="100,100">&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
@@ -213,7 +218,13 @@ Onder je zie je het kasteel verdwijnen.</tw-passagedata><tw-passagedata pid="32"
 .text-block {
 	margin: auto auto 50px auto;
 }
-&lt;/style&gt;</tw-passagedata><tw-passagedata pid="38" name="variables" tags="startup" position="344,295" size="100,100">(set: $bril to false)</tw-passagedata></tw-storydata>
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="38" name="variables" tags="startup" position="344,295" size="100,100">(set: $bril to false)</tw-passagedata><tw-passagedata pid="39" name="onderweg naar de dinos" tags="" position="851,1516" size="100,100">Hoog in de lucht zweeft de ballon door de wolken. 
+Af en toe kan de grond zien.
+Hoge bergen en weide zeeën glijden voorbij. 
+
+Na een urenlange tocht begint de vanzelf ballon te dalen.
+
+[[houd je stevig vast voor landing-&gt;Landing Dinos]]</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
