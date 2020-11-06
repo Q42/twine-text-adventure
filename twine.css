@@ -41,6 +41,14 @@ tw-passage {
     object-fit: cover;
 }
 
+tw-link {
+    font-size: 1.25em;
+}
+
+tw-link, tw-link:hover, .visited, .visited:hover {
+    color: black;
+}
+
 tw-link:after {
     content: '\1f852';
     position: absolute;
@@ -50,10 +58,6 @@ tw-link:after {
 }
 tw-link:hover:after {
     margin-left: 15px;
-}
-
-tw-link, tw-link:hover, .visited, .visited:hover {
-    color: black;
 }
 
 .hero-image {
