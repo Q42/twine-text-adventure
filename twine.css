@@ -19,6 +19,7 @@ tw-story {
 
 /* Fix position absolute weirdness in transitions*/
 tw-transition-container tw-passage {
+    z-index: 10;
     left: 0;
     top: 0;
     width: 100%;
@@ -26,6 +27,7 @@ tw-transition-container tw-passage {
 }
 
 .text-block {
+    z-index: 1;
     position: absolute;
     top: 0;
     left: 0;
@@ -40,7 +42,6 @@ tw-transition-container tw-passage {
 }
 
 .background {
-    z-index: -1000;
     position: absolute;
     top: 0;
     left: 0;
