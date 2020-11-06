@@ -8,6 +8,13 @@ tw-story {
     background: none;
 }
 
+tw-passage {
+    width: fit-content;
+    padding: 50px;
+    background-color: white;
+    box-shadow: 0 0 20px 20px white;
+}
+
 tw-expression[name=link-goto] {
     width: 50%;
     float: left;
