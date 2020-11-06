@@ -60,6 +60,11 @@ tw-transition-container tw-passage {
     z-index: 1000;
 }
 
+tw-sidebar {
+    z-index: 1000;
+    left: 20px;
+}
+
 tw-link {
     margin-right: 30px;
     font-size: 1.25em;
