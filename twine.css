@@ -56,6 +56,27 @@ tw-transition-container tw-passage {
     object-fit: cover;
 }
 
+.cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    margin: auto;
+}
+
+.cover-text {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto auto 6vh auto;
+}
+
 #tooltip {
     z-index: 1000;
 }
