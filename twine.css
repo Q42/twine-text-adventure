@@ -1,6 +1,11 @@
+*, :before, :after {
+    position: initial;
+    box-sizing: initial;
+}
+
 tw-story {
     color: black;
-    background-color: white;
+    background: none;
 }
 
 tw-expression[name=link-goto] {
@@ -16,6 +21,7 @@ tw-link {
     border: 1px solid black;
     border-radius: 3px;
     color: black;
+    background-color: white;
     transition: background-color .2s linear, font-size .2s ease-in-out;
 }
 
