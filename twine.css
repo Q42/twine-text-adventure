@@ -77,6 +77,10 @@ tw-transition-container tw-passage {
     margin: auto auto 6vh auto;
 }
 
+.cover-text tw-link, .cover-text tw-link:hover, .cover-text .visited, .cover-text .visited:hover {
+    color: #E7DC35;
+}
+
 #tooltip {
     z-index: 1000;
 }
