@@ -25,6 +25,10 @@ tw-link:hover {
     color: black;
 }
 
+.visited, .visited:hover {
+    color: black;
+}
+
 .hero-image {
     width: 100%;
     height: 250px;
