@@ -38,32 +38,3 @@ tw-link:hover {
 .hero-image img {
     width: 100%;
 }
-
-#tooltip {
-    position: absolute;
-    padding: 10px;
-    margin-top: -60px;
-    margin-left: -70px;
-    font-size: 24px;
-    border: 1px solid black;
-    border-radius: 3px;
-    background-color: white;
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
-}
-
-#tooltip:after {
-    content: '';
-    position: absolute;
-    left: 60px;
-    bottom: -9px;
-    width: 15px;
-    height: 15px;
-    border: solid black;
-    border-width: 0 0 1px 1px;
-    transform: rotate(-45deg);
-    background-color: white;
-}
-
-#tts-image {
-    width: 22px;
-}
