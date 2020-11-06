@@ -7,13 +7,22 @@ tw-story {
     position: relative;
     color: black;
     background: none;
+    padding: 5%;
+    font-family: report-school;
+}
+
+@media only screen and (max-width: 1024px) {
+    tw-story {
+        font-size: 18px;
+    }
 }
 
 tw-passage {
     width: fit-content;
-    padding: 50px;
-    background-color: white;
-    box-shadow: 0 0 20px 20px white;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, .9);
+    box-shadow: 0 0 30px 30px rgba(255, 255, 255, .9);
+    border-radius: 20px;
 }
 
 .background {
