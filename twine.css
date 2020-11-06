@@ -56,6 +56,10 @@ tw-transition-container tw-passage {
     object-fit: cover;
 }
 
+#tooltip {
+    z-index: 1000;
+}
+
 tw-link {
     font-size: 1.25em;
     line-height: 1.75em;
