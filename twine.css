@@ -43,6 +43,7 @@ tw-passage {
 
 tw-link {
     font-size: 1.25em;
+    line-height: 1.75em;
 }
 
 tw-link, tw-link:hover, .visited, .visited:hover {
