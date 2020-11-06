@@ -61,6 +61,7 @@ tw-transition-container tw-passage {
 }
 
 tw-link {
+    margin-right: 30px;
     font-size: 1.25em;
     line-height: 1.75em;
 }
