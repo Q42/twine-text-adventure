@@ -30,10 +30,10 @@ window.play = function() {
     audioEl.play();
 }
 
-document.onclick = function() {
-    const id = event.target.getAttribute("id");
+document.onclick = function(e) {
+    const id = e.target.getAttribute("id");
 
-    if (event.target.tagName == "A" || id == "tooltip" || id == "tts-image") {
+    if (e.target.tagName === "A" || id === "tooltip" || id === "tts-image") {
         return;
     }
 
